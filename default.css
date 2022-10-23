@@ -1,3 +1,4 @@
+/* 默认设置 */
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?570ghh');
@@ -16,10 +17,22 @@
 }
 
 .w {
-    width: 1400px;
+    width: 90%;
     margin: 0 auto;
 }
-/* 版心  */
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing: 0;
+}
 
 li {
     list-style: none;
@@ -35,7 +48,8 @@ body {
     background-color: black;
     color: white;
 }
-
+/* 默认设置 */
+/* 标题栏 */
 header {
     height: 55px;
     background-image: url(icon/main.png);
@@ -50,7 +64,8 @@ header h2{
     font-weight: 400;
     margin-left: 45px;
 }
-
+/* 标题栏 */
+/* 导航栏 */
 nav {
     height: 50px;
 }
@@ -104,42 +119,39 @@ nav ul>li a:hover {
     background-image: url(icon/search.png);
     border-radius: 0px 0px 5px 5px;
 }
-
-main {
+/* 导航栏 */
+/* 页脚 */
+footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
     background-color: white;
-    height: 800px;
+    margin-top: 36px;
 }
 
-.jieshao {
+footer .kuozhan {
+    position: absolute;
+    top: 24px;
+    left: 189px;
+    width: 75%;
+    background-color: white;
+    border-top: 1px solid #cccccc;
+    padding: 25px 0 200px 0;
+}
+
+footer .kuozhan dl {
     float: left;
-    color: black;
-    font-size: 14px;
+    margin-right: 150px;
 }
 
-.tuijian {
-    float: right;
-    width: 250px;
-    height: 325px;
-    color: black;
-    background-color: pink;
+footer .kuozhan dl dt{
+    color: #4f4f4f;
+    font-size: 18px;
+    margin-bottom: 18px;
 }
 
-.tuijian ul>li {
-    width: 250px;
-    height: 50px;
-    background-color: #337ab7;
-    margin-bottom: 15px;
+footer .kuozhan dl dd a{
+    color: #4f4f4f;
+    font-size: 12px;
 }
-
-.tuijian ul>li a {
-    display: block;
-    width: 250px;
-    height: 50px;
-}
-
-.tuijian ul>li a img {
-    width: 60px;
-    height: 50px;
-    vertical-align: middle;
-}
-
+/* 页脚 */

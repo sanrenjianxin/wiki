@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice and Fire's wiki</title>
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -19,9 +20,8 @@
         <ul>
             <li><a href="index.html">首页</a></li>
             <li><a href="characters.html">人物</a></li>
-            <li><a href="#">世界</a></li>
-            <li><a href="#">经典情节</a></li>
-            <li><a href="sign_in.html">问卷</a></li>
+            <li><a href="world.html">世界</a></li>
+            <li><a href="add_character.html">管理员界面</a></li>
         </ul>
         <!-- 搜索模块 -->
         <div class="search">
@@ -30,8 +30,12 @@
         </div>
     </nav>
 
-    <main class="w">
+    <main class="w clearfix">
+        <div class="leftjieshao">
+            <img src="icon/jieshao.png" alt="">
+        </div>
         <div class="jieshao">
+            <h4>关于冰与火之歌</h4>
             《冰与火之歌》（A Song of Ice and Fire）是由美国著名科幻奇幻小说<br>
             家乔治·R·R·马丁（George R.R.Martin）所著的史诗奇幻小说，是当代奇<br>
             幻文学一部影响深远的里程碑式的作品。于1996年初问世时，便以别具一格<br>
@@ -47,38 +51,28 @@
                 <li class="stark"><a href="#"><img src="familiy_img/Stark.png" alt="">史塔克家族</a></li>
                 <li class="james"><a href="#"><img src="character_img/james.jpg" alt="">詹姆·兰尼斯特</a></li>
                 <li class="red"><a href="#"><img src="plot_img/red_wedding.png" alt="">血色婚礼</a></li>
-                <li class="wenjuan"><a href="sign_in.html" target="_blank"><img src="" alt="">赏个脸填个问卷吧</a></li>
             </ul>
         </div>
     </main>
 
-    <div>吐槽
-        <form action="">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </form>
-    </div>
-
-    <footer> 
-        <div>
-            在线观看权利的游戏
-        </div>
-        <div>
+    <footer class="clearfix"> 
+        <div class="kuozhan">
             <dl>
                 <dt>关注作者</dt>
-                <dd><a href="#">知乎</a></dd>
-                <dd><a href="#">CSDN</a></dd>
-                <dd><a href="#">个人博客</a></dd>
+                <dd><a href="#">知乎</a></dd>
+                <dd><a href="#">CSDN</a></dd>
+                <dd><a href="#">个人博客</a></dd>
             </dl>
             <dl>
                 <dt>用户交流</dt>
-                <dd><a href="#">QQ一群</a></dd>
-                <dd><a href="#">QQ二群</a></dd>
-                <dd><a href="#">QQ三群</a></dd>
+                <dd><a href="#">QQ一群</a></dd>
+                <dd><a href="#">QQ二群</a></dd>
+                <dd><a href="#">QQ三群</a></dd>
             </dl>
             <dl>
                 <dt>合作伙伴</dt>
-                <dd><a href="#">打赏</a></dd>
-                <dd>联系作者</dd>
+                <dd><a href="#">打赏</a></dd>
+                <dd>联系作者</dd>
             </dl>
         </div>
     </footer>

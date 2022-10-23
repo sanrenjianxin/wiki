@@ -1,0 +1,53 @@
+/* 主要内容 */
+main {
+    background-color: white;
+    color: black;
+}
+
+main a {
+    color: #428bca;
+    font-size: 16px;
+}
+main .POVyilan {
+    height: 80px;
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 45px;
+    border-bottom: 1px solid #cccccc ;
+    font-family: "Palatino Linotype";
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.renwubiao {
+    width: 96%;
+    height: 600px;
+    margin: 0 auto;
+}
+.renwubiao h4 {
+    padding: 25px 0 12px 0;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Palatino Linotype";
+    line-height: 26px;
+}
+.renwubiao .lei1 {
+    float: left;
+    width: 33%;
+}
+.renwubiao .lei2 {
+    float: left;
+    width: 33%;
+}
+.renwubiao .lei3 {
+    float: left;
+    width: 33%;
+}
+.renwubiao ul {
+    margin: 13px 0 9px 25.6px;
+    line-height: 23px;
+}
+.renwubiao ul li {
+    margin-top: 5px;
+    list-style-type: disc;
+}

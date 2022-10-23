@@ -1,0 +1,63 @@
+/* 主要内容 */
+.map {
+    position: relative;
+    width: 100%;
+}
+.map img {
+    width: 100%;
+}
+
+.wtsl {
+    position: absolute;
+    top: 54.07%;
+    right: 87.78%;
+    color: #fff;
+}
+.esss {
+    top: 54%;
+    right: 44%;
+}
+.ssls {
+    top: 95%;
+    right: 43%;
+}
+.wets {
+    top: 96.3%;
+    right: 5.6%;
+}
+.dotted {
+    width: 8px;
+    height: 8px;
+    background-color: #09f;
+    border-radius: 50%;
+}
+.wtsl div[class^="pulse"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 12px #009dfd;
+    border-radius: 50%;
+    animation: pulse 1.2s linear infinite;
+}
+.wtsl div.pulse2 {
+    animation-delay: 0.4s;
+}
+.wtsl div.pulse3 {
+    animation-delay: 0.8s;
+}
+@keyframes pulse {
+    0% {}
+    70% {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+    100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
+}

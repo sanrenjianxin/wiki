@@ -1,0 +1,60 @@
+/* 主要内容 */
+main {
+    background-color: white;
+}
+.leftjieshao {
+    float: left;
+    margin: 45px 23px 0 44px;
+}
+.leftjieshao img {
+    width: 80px;
+    height: 80px;
+}
+.jieshao {
+    float: left;
+    margin-top: 48px;
+    color: black;
+    font-size: 14px;
+}
+
+.jieshao h4 {
+    font-size: 18px;
+    font-style: none;
+    margin-bottom: 22px;
+}
+
+.tuijian {
+    float: right;
+    margin: 40px 153px 0 0;
+    width: 250px;
+    height: 325px;
+    color: black;
+}
+
+.tuijian ul>li {
+    width: 250px;
+    height: 50px;
+    background-color: #337ab7;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px rgba(0, 0, 0, .3);
+}
+
+.tuijian ul>li a {
+    display: block;
+    overflow: hidden;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tuijian ul>li a img {
+    float: left;
+    width: 60px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.tuijian ul>li a img:hover{
+    transform: scale(1.2);
+}
