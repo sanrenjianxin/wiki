@@ -6,7 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>管理员登录界面</title>
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/add_character.css">
+    <link rel="stylesheet" href="css/jquery.cardtabs.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cardtabs.js"></script>
+    <script>
+        $(function () {
+            $('.container').cardTabs({'theme': 'graygreen'}); 
+        });
+    </script>
 </head>
 
 <body>
@@ -15,43 +24,53 @@
     </header>
 
     <nav>
+        <!-- 导航栏 -->
         <ul>
             <li><a href="index.html">首页</a></li>
             <li><a href="characters.html">人物</a></li>
             <li><a href="world.html">世界</a></li>
             <li><a href="add_character.html">管理员界面</a></li>
         </ul>
-    </nav>
-    <main class="w clearfix">
-        <div class="add-head">
-            <h4>管理员增加人物</h4>
+        <!-- 搜索模块 -->
+        <div class="search">
+            <input type="search" placeholder="在冰与火之歌维基中搜索关键词">
+            <button type="button"></button>
         </div>
-        <table width="700">
-            <tr>
-                <td>人物姓名:</td>
-                <td><input type="text" name="area" value="请输入姓名" id="add_name"></td>
-            </tr>
-            <tr>
-                <td>性格和外貌:</td>
-                <td><textarea></textarea></td>
-            </tr>
-            <tr>
-                <td>历史:</td>
-                <td><textarea></textarea></td>
-            </tr>
-            <tr>
-                <td>语录:</td>
-                <td><textarea></textarea></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="提交"></td>
-            </tr>
-        </table>
+    </nav>
+    <main class="w">
+        <div class='container'>
+            <div data-tab="增加人物">
+                /* contents of the first tab...  */
+            </div>
+            <div data-tab="删除人物">
+                /* contents of the second tab...  */
+            </div>
+            <div data-tab="修改人物">
+                /* contents of the third tab...  */
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>© 2022 散人剑心保留所有权利</p>
+    <footer class="clearfix">
+        <div class="kuozhan">
+            <dl>
+                <dt>关注作者</dt>
+                <dd><a href="#">知乎</a></dd>
+                <dd><a href="#">CSDN</a></dd>
+                <dd><a href="#">个人博客</a></dd>
+            </dl>
+            <dl>
+                <dt>用户交流</dt>
+                <dd><a href="#">QQ一群</a></dd>
+                <dd><a href="#">QQ二群</a></dd>
+                <dd><a href="#">QQ三群</a></dd>
+            </dl>
+            <dl>
+                <dt>合作伙伴</dt>
+                <dd><a href="#">打赏</a></dd>
+                <dd>联系作者</dd>
+            </dl>
+        </div>
     </footer>
 </body>
 

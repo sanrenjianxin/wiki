@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice and Fire's wiki</title>
-    <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="easySlider/201609071718/css/style.css">
+    <script src="easySlider/201609071718/js/jquery-2.1.1.min.js"></script>
+    <script src="easySlider/201609071718/dist/easySlider.js"></script>
+    <script>
+        $(function () {
+            $("#slider").easySlider({});
+        });
+    </script>
 </head>
 
 <body>
@@ -53,9 +61,29 @@
                 <li class="red"><a href="#"><img src="plot_img/red_wedding.png" alt="">血色婚礼</a></li>
             </ul>
         </div>
+        <!-- easySlider plugin -->
+        <div id="slider">
+            <ul class="slides">
+                <li><img class="responsive" src="easySlider-img/fengxibao.jpg"></li>
+                <li><img class="responsive" src="easySlider-img/gaoting.jpg"></li>
+                <li><img class="responsive" src="easySlider-img/yingchaocheng.jpg"></li>
+            </ul>
+
+            <ul class="controls">
+                <li><img src="easySlider/201609071718/img/prev.png" alt="previous"></li>
+                <li><img src="easySlider/201609071718/img/next.png" alt="next"></li>
+            </ul>
+
+            <ul class="pagination">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- easySlider plugin -->
     </main>
 
-    <footer class="clearfix"> 
+    <footer class="clearfix">
         <div class="kuozhan">
             <dl>
                 <dt>关注作者</dt>

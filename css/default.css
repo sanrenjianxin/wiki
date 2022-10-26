@@ -1,11 +1,11 @@
 /* 默认设置 */
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?570ghh');
-    src:  url('fonts/icomoon.eot?570ghh#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?570ghh') format('truetype'),
-      url('fonts/icomoon.woff?570ghh') format('woff'),
-      url('fonts/icomoon.svg?570ghh#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?570ghh');
+    src:  url('../fonts/icomoon.eot?570ghh#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?570ghh') format('truetype'),
+      url('../fonts/icomoon.woff?570ghh') format('woff'),
+      url('../fonts/icomoon.svg?570ghh#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -52,7 +52,7 @@ body {
 /* 标题栏 */
 header {
     height: 55px;
-    background-image: url(icon/main.png);
+    background-image: url(../icon/main.png);
     background-repeat: no-repeat;
     background-position: left center;
 }
@@ -116,7 +116,7 @@ nav ul>li a:hover {
     height: 34px;
     margin: 8px 0 8px 0;
     border: none;
-    background-image: url(icon/search.png);
+    background-image: url(../icon/search.png);
     border-radius: 0px 0px 5px 5px;
 }
 /* 导航栏 */
