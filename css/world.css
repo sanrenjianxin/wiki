@@ -18,16 +18,16 @@
     right: 44%;
 }
 .ssls {
-    top: 95%;
+    top: 92%;
     right: 43%;
 }
 .wets {
-    top: 96.3%;
+    top: 92.3%;
     right: 5.6%;
 }
 .dotted {
-    width: 8px;
-    height: 8px;
+    width: .0667rem;
+    height: .0667rem;
     background-color: #09f;
     border-radius: 50%;
 }
@@ -36,9 +36,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 8px;
-    height: 8px;
-    box-shadow: 0 0 12px #009dfd;
+    width: .0667rem;
+    height: .0667rem;
+    box-shadow: 0 0 .1rem #009dfd;
     border-radius: 50%;
     animation: pulse 1.2s linear infinite;
 }
@@ -51,13 +51,13 @@
 @keyframes pulse {
     0% {}
     70% {
-        width: 40px;
-        height: 40px;
+        width: .3333rem;
+        height: .3333rem;
         opacity: 1;
     }
     100% {
-        width: 70px;
-        height: 70px;
+        width: .5833rem;
+        height: .5833rem;
         opacity: 0;
     }
 }

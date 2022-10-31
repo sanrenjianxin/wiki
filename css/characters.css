@@ -6,30 +6,30 @@ main {
 
 main a {
     color: #428bca;
-    font-size: 16px;
+    font-size: .1333rem;
 }
 main .POVyilan {
-    height: 80px;
+    height: .6667rem;
     width: 96%;
     margin: 0 auto;
-    padding-top: 45px;
-    border-bottom: 1px solid #cccccc ;
+    padding-top: .375rem;
+    border-bottom: .0083rem solid #cccccc ;
     font-family: "Palatino Linotype";
     font-weight: 400;
-    font-size: 48px;
+    font-size: .4rem;
 }
 
 .renwubiao {
     width: 96%;
-    height: 600px;
+    height: 5rem;
     margin: 0 auto;
 }
 .renwubiao h4 {
-    padding: 25px 0 12px 0;
-    font-size: 28px;
+    padding: .2083rem 0 .1rem 0;
+    font-size: .2333rem;
     font-weight: 400;
     font-family: "Palatino Linotype";
-    line-height: 26px;
+    line-height: .2167rem;
 }
 .renwubiao .lei1 {
     float: left;
@@ -44,10 +44,11 @@ main .POVyilan {
     width: 33%;
 }
 .renwubiao ul {
-    margin: 13px 0 9px 25.6px;
-    line-height: 23px;
+    margin: .1083rem 0 .075rem .2133rem;
+    line-height: .1917rem;
 }
 .renwubiao ul li {
-    margin-top: 5px;
+    margin-top: .0417rem;
     list-style-type: disc;
+    font-size: .1rem;
 }

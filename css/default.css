@@ -1,3 +1,25 @@
+/* 响应式媒体查询 */
+@media screen and (max-width: 768px) {
+	html {
+        font-size: 75px;
+    }
+}
+@media screen and (min-width: 768px) {
+	html {
+        font-size: 76.8px;
+    }
+}
+@media screen and (min-width: 992px) {
+	html {
+        font-size: 99.2px;
+    }
+}
+@media screen and (min-width: 1200px) {
+	html {
+        font-size: 120px;
+    }
+} 
+/* 响应式媒体查询 */
 /* 默认设置 */
 @font-face {
     font-family: 'icomoon';
@@ -58,29 +80,29 @@ header {
 }
 
 header h2{
-    height: 55px;
-    font-size: 26px;
-    line-height: 55px;
+    height: 54.996px;
+    font-size: 26.004px;
+    line-height: 54.996px;
     font-weight: 400;
     margin-left: 45px;
 }
 /* 标题栏 */
 /* 导航栏 */
 nav {
-    height: 50px;
+    height: 50.004px;
 }
 
 nav ul>li {
     float: left;
-    height: 50px;  
+    height: 50.004px;  
 }
 
 nav ul>li a {
     display: block;
-    height: 25px;
-    padding: 15px 15px 10px 15px;
-    font-size: 16px;
-    margin-right: 1px;
+    height: 24.996px;
+    padding: 15px 15px 9.996px 15px;
+    font-size: 15.996px;
+    margin-right: .996px;
 }
 
 nav ul>li a:hover {
@@ -89,69 +111,75 @@ nav ul>li a:hover {
 
 .search {
     float: right;
-    width: 500px;
-    height: 50px;
+    width: 500.004px;
+    height: 50.004px;
 }
 
 .search input {
     float: left;
-    width: 445px;
+    width: 444.996px;
     height: 30px;
-    margin: 10px 0 10px 0;
+    margin: 9.996px 0 9.996px 0;
     background-color: #1a1a1a;
-    border: 1px solid #1a1a1a;
+    border: .996px solid #1a1a1a;
     color: #bfbfbf;
-    font-size: 14px;
+    font-size: 14.004px;
     padding-left: 15px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5.004px 0 0 5.004px;
 }
 
 .search input:hover {
-    border: 1px solid #00a4ff;
+    border: .996px solid #00a4ff;
 }
 
 .search button {
     float: left;
     width: 36px;
-    height: 34px;
-    margin: 8px 0 8px 0;
+    height: 33.996px;
+    margin: 8.004px 0 8.004px 0;
     border: none;
     background-image: url(../icon/search.png);
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5.004px 5.004px;
+    cursor: pointer;
 }
 /* 导航栏 */
 /* 页脚 */
 footer {
-    position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 4.1667rem;
     background-color: white;
-    margin-top: 36px;
+    margin-top: .3rem;
 }
 
 footer .kuozhan {
-    position: absolute;
-    top: 24px;
-    left: 189px;
+    display: flex;
+    justify-content: space-around;
     width: 75%;
+    font-size: 0.1rem;
     background-color: white;
-    border-top: 1px solid #cccccc;
-    padding: 25px 0 200px 0;
+    border-top: .0083rem solid #cccccc;
+    padding: .2083rem 0 1.6667rem 0;
+    margin-top: .4167rem;
 }
 
 footer .kuozhan dl {
-    float: left;
-    margin-right: 150px;
+    margin-right: 1.25rem;
+}
+
+footer .kuozhan dl dd {
+    margin-bottom: 0;
 }
 
 footer .kuozhan dl dt{
     color: #4f4f4f;
-    font-size: 18px;
-    margin-bottom: 18px;
+    font-size: .15rem;
+    margin-bottom: .15rem;
 }
 
 footer .kuozhan dl dd a{
     color: #4f4f4f;
-    font-size: 12px;
+    font-size: .1rem;
 }
 /* 页脚 */

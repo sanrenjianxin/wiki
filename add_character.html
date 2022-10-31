@@ -13,7 +13,7 @@
     <script src="js/jquery.cardtabs.js"></script>
     <script>
         $(function () {
-            $('.container').cardTabs({'theme': 'graygreen'}); 
+            $('.container').cardTabs({ 'theme': 'graygreen' });
         });
     </script>
 </head>
@@ -40,13 +40,52 @@
     <main class="w">
         <div class='container'>
             <div data-tab="增加人物">
-                /* contents of the first tab...  */
+                <form class="wrapper" method="post">
+                    <div class="add-name">
+                        <h3>姓名</h3>
+                        <input type="text" placeholder="输入你想增加的人物姓名" class="add_name">
+                        <p class="addmessage"></p>
+                    </div>
+                    <script>
+                        var add_name = document.querySelector('.add_name');
+                        var message = document.querySelector('.addmessage');
+                        add_name.onblur = function() {
+                            if(add_name.value.length > 10 ){
+                                message.innerHTML = '输入名字不能超过10位';
+                            }
+                            else if(add_name.value.length == 0){
+                                message.innerHTML = '输入名字不能为空';
+                            }
+                        }
+                    </script>
+                    <div class="add-char">
+                        <h3>性格和外貌</h3>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="输入人物性格和外貌"></textarea>
+                    </div>
+                    <div class="add-hist">
+                        <h3>历史</h3>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="输入人物历史"></textarea>
+                    </div>
+                    <div class="add-word">
+                        <h3>语录</h3>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="输入人物语录"></textarea>
+                    </div>
+                    <input type="submit" value="提交">
+                </form>
             </div>
             <div data-tab="删除人物">
-                /* contents of the second tab...  */
+                <div class="del-">
+                    <h3>姓名</h3>
+                    <input type="search" placeholder="输入想删除人物的姓名">
+                    <button type="button"></button>
+                </div>
             </div>
             <div data-tab="修改人物">
-                /* contents of the third tab...  */
+                <div class="alter-">
+                    <h3>姓名</h3>
+                    <input type="search" placeholder="输入想修改人物的姓名">
+                    <button type="button"></button>
+                </div>
             </div>
         </div>
     </main>

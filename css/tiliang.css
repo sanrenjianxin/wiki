@@ -1,5 +1,6 @@
 main {
     background-color: #fff;
+    font-size: .1333rem;
 }
 
 table {
@@ -8,60 +9,60 @@ table {
 
 aside {
     position: fixed;
-    top: 100px;
-    left: 85px;
+    top: 1.3rem;
+    left: .7083rem;
     width: 15%;
     height: 100%;
     color: black;
 }
 
 aside ul {
-    margin-top: 35px;
+    margin-top: .2917rem;
 }
 
 aside ul li {
-    height: 46px;
+    height: .5833rem;
 }
 
 aside a {
     display: inline-block;
-    padding: 11px 0 11px 22px;
-    margin-left: 30px;
-    font-size: 13px;
+    padding: .1rem 0 .1rem .1833rem;
+    margin-left: .25rem;
+    font-size: .1083rem;
     color: #a6a6a6;
-    border-left: 1px solid white;
+    border-left: .0083rem solid white;
     transition: all 1s;
 }
 
 aside a:hover {
-    border-left: 1px solid #6aa3d5;
+    border-left: .0083rem solid #6aa3d5;
     color: #6aa3d5;
 }
 
 .jianjie {
     width: 80%;
     height: 100%;
-    margin-left: 215px;
+    margin-left: 1.7917rem;
     background-color: white;
     color: black;
 }
 
 .headname {
-    height: 88px;
+    height: .7333rem;
     width: 100%;
-    padding: 24px 0 0 0;
-    border-bottom: 1px solid #cccccc;
+    padding: .2rem 0 0 0;
+    border-bottom: .0083rem solid #cccccc;
 }
 
 .jianjie h1 {
-    font-size: 3em;
+    font-size: .4rem;
     font-weight: 400;
 }
 
 .infobox {
     display: table;
     float: right;
-    width: 300px;
+    width: 2.5rem;
     table-layout: fixed;
     background-color: #222222;
     color: #fff;
@@ -69,42 +70,42 @@ aside a:hover {
 
 .infobox-title {
     display: block;
-    width: 284px;
-    padding: 8px 8px 8px 8px;
+    width: 2.3667rem;
+    padding: .0667rem .0667rem .0667rem .0667rem;
     background-color: #881010;
     color: white;
 }
 
 .infobox-title th {
     display: block;
-    font-size: 16px;
+    font-size: .1333rem;
 }
 
 .infobox-photo img {
-    width: 300px;
+    width: 2.5rem;
 }
 
 .infobox-thead {
     display: block;
-    width: 300px;
-    height: 36px;
+    width: 2.5rem;
+    height: .3rem;
     background-color: #337ab7;
     color: white;
 }
 
 .infobox-thead th {
     display: block;
-    height: 36px;
-    line-height: 36px;
+    height: .3rem;
+    line-height: .3rem;
     margin: 0 auto;
 }
 
 
 .headline {
-    font-size: 32px;
+    font-size: .2667rem;
     font-weight: 400;
     padding-bottom: 0.5em;
-    padding-top: 50px;
+    padding-top: .4167rem;
 }
 
 main p {
@@ -113,15 +114,60 @@ main p {
 
 .yinhao {
     border: none;
-    width: 20px;
+    width: .1667rem;
     color: #bbb;
-    font: 50px Arial, Trebuchet MS, Georgia, sans-serif;
-    line-height: 30px;
+    font: .4167rem Arial, Trebuchet MS, Georgia, sans-serif;
+    line-height: .25rem;
 }
 
 .quote {
     border: none;
-    padding-left: 5px px;
-    font-size: 16px;
+    padding-left: .0417rem;
+    font-size: .1333rem;
     font-family: Times New Roman, 楷体, Consolas, 'Microsoft Yahei', 'Open Sans', sans-serif;
 }
+
+/* scene */
+.scene {
+    width: 8.3333rem;
+    display: flex;
+    justify-content: space-between;
+    -webkit-perspective: 6.6667rem;
+            perspective: 6.6667rem;
+  }
+  .scene .card {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  .scene .card:hover {
+    -webkit-transform: rotateY(0.5turn);
+            transform: rotateY(0.5turn);
+  }
+  .scene .card .card__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  }
+  .scene .card .card__face img {
+    width: 2.5rem;
+    height: 2.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .scene .card .card__face--back {
+    -webkit-transform: rotateY(0.5turn);
+            transform: rotateY(0.5turn);
+  }
+/* scene */

@@ -1,11 +1,21 @@
 main {
     background-color: #fff;
     color: black;
+    font-size: 16px;
 }
 
 .current {
     background-color: red;
 }
 
-/* tabs */
-/* tabs */
+.addmessage {
+    display: inline;
+    color: red;
+}
+
+button {
+    font-family: 'icomoon';
+    height: 20px;
+    width: 26px;
+    background-color: none;
+}
