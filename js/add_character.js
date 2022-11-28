@@ -1,17 +1,17 @@
 window.onload = function () {
     var username = $.cookie("userName");
     if (username != undefined) {// 登录
-        // $(".panel-lite").css("display", "none");
-        // $(".container").css("display", "block");
+        $(".panel-lite").css("display", "none");
+        $(".container").css("display", "block");
         $("#logout").css("display","none");
     }
     else {// 登出
-        // $(".panel-lite").css("display", "block");
-        // $(".container").css("display", "none");
-        
-        $.get("./tpl/login.tpl.html", function(result){      
-            $("#login-wrapper").html(result);
-      });
+        $(".panel-lite").css("display", "block");
+        $(".container").css("display", "none");
+        $("#logout").css("display","block");
+    //     $.get("./tpl/login.tpl.html", function(result){      
+    //         $("#login-wrapper").html(result);
+    //   });
     }
 }
 
