@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>管理员登录界面</title>
+    <title>管理员界面</title>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/add_character.css">
     <link rel="stylesheet" href="css/jquery.cardtabs.css">
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/smallde.css">
+    <script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/jquery.cardtabs.js"></script>
+    <script src="js/default.js"></script>
     <script>
         $(function () {
             $('.container').cardTabs({ 'theme': 'graygreen' });
         });
     </script>
+    <script src="js/add_character.js"></script>
 </head>
 
 <body>
     <header>
-        <h2>冰与火之歌维基</h2>
+        <h2>冰与火之歌维基<span class="greet">欢迎你,游客</span><button id="logout">登出</button></h2>
     </header>
 
     <nav>
@@ -38,53 +42,75 @@
         </div>
     </nav>
     <main class="w">
+        <div id="login-wrapper"> </div>
         <div class='container'>
             <div data-tab="增加人物">
-                <form class="wrapper" method="post">
-                    <div class="add-name">
-                        <h3>姓名</h3>
-                        <input type="text" placeholder="输入你想增加的人物姓名" class="add_name">
-                        <p class="addmessage"></p>
-                    </div>
-                    <script>
-                        var add_name = document.querySelector('.add_name');
-                        var message = document.querySelector('.addmessage');
-                        add_name.onblur = function() {
-                            if(add_name.value.length > 10 ){
-                                message.innerHTML = '输入名字不能超过10位';
-                            }
-                            else if(add_name.value.length == 0){
-                                message.innerHTML = '输入名字不能为空';
-                            }
+                <div class="add-name">
+                    <h3>姓名</h3>
+                    <input type="text" placeholder="输入你想增加的人物姓名" class="add_name">
+                    <button class="add-btn">确认</button>
+                    <p class="addmessage"></p>
+                </div>
+                <script>
+                    var add_name = document.querySelector('.add_name');
+                    var message = document.querySelector('.addmessage');
+                    add_name.onblur = function () {
+                        if (add_name.value.length > 7) {
+                            message.innerHTML = '输入名字不能超过7位';
                         }
-                    </script>
-                    <div class="add-char">
-                        <h3>性格和外貌</h3>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="输入人物性格和外貌"></textarea>
-                    </div>
-                    <div class="add-hist">
-                        <h3>历史</h3>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="输入人物历史"></textarea>
-                    </div>
-                    <div class="add-word">
-                        <h3>语录</h3>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="输入人物语录"></textarea>
-                    </div>
-                    <input type="submit" value="提交">
-                </form>
+                        else if (add_name.value.length == 0) {
+                            message.innerHTML = '输入名字不能为空';
+                        }
+                    }
+                </script>
+                <h4>目前的人物</h4>
+                <ul id="add-list">
+                    <li class="item">艾德·史塔克</li>
+                    <li class="item">艾莉亚·史塔克</li>
+                    <li class="item">阿利欧·何塔</li>
+                    <li class="item">阿莎·葛雷乔伊</li>
+                    <li class="item">巴利斯坦·赛尔弥</li>
+                    <li class="item">琼恩·克林顿</li>
+                    <li class="item">琼恩·雪诺</li>
+                    <li class="item">瑟曦·兰尼斯特</li>
+                    <li class="item">山姆威尔·塔利</li>
+                    <li class="item">提利昂·兰尼斯特</li>
+                </ul>
             </div>
             <div data-tab="删除人物">
                 <div class="del-">
-                    <h3>姓名</h3>
-                    <input type="search" placeholder="输入想删除人物的姓名">
-                    <button type="button"></button>
+                    <ul>
+                        <li>艾德·史塔克<button class="del-button">删除</button></li>
+                        <li>艾莉亚·史塔克<button class="del-button">删除</button></li>
+                        <li>阿利欧·何塔<button class="del-button">删除</button></li>
+                        <li>阿莎·葛雷乔伊<button class="del-button">删除</button></li>
+                        <li>巴利斯坦·赛尔弥<button class="del-button">删除</button></li>
+                        <li>琼恩·克林顿<button class="del-button">删除</button></li>
+                        <li>琼恩·雪诺<button class="del-button">删除</button></li>
+                        <li>瑟曦·兰尼斯特<button class="del-button">删除</button></li>
+                        <li>山姆威尔·塔利<button class="del-button">删除</button></li>
+                        <li>提利昂·兰尼斯特<button class="del-button">删除</button></li>
+                    </ul>
                 </div>
             </div>
-            <div data-tab="修改人物">
+            <div data-tab="查找/修改人物">
                 <div class="alter-">
                     <h3>姓名</h3>
-                    <input type="search" placeholder="输入想修改人物的姓名">
-                    <button type="button"></button>
+                    <input type="search" placeholder="输入想修改人物的姓名" class="al-search">
+                    <button type="button" class="al-button"></button>
+                    <span>例如: tiliang/提利昂-兰尼斯特</span>
+                    <div class="character">
+                        <h4>性格和外貌</h4>
+                        <p id="al-1"></p>
+                    </div>
+                    <div class="history">
+                        <h4>历史</h4>
+                        <p id="al-2"></p>
+                    </div>
+                    <div class="qutoe">
+                        <h4>语录</h4>
+                        <p id="al-3"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,6 +137,7 @@
             </dl>
         </div>
     </footer>
+
 </body>
 
 </html>

@@ -86,6 +86,10 @@ header h2{
     font-weight: 400;
     margin-left: 45px;
 }
+.greet {
+    float: right;
+    font-size: 16px;
+}
 /* 标题栏 */
 /* 导航栏 */
 nav {

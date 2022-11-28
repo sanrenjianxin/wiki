@@ -3,6 +3,10 @@ main {
     font-size: .1333rem;
 }
 
+p {
+    font-size: 16px;
+}
+
 table {
     table-layout: fixed;
 }
@@ -78,7 +82,7 @@ aside a:hover {
 
 .infobox-title th {
     display: block;
-    font-size: .1333rem;
+    font-size: 16px;
 }
 
 .infobox-photo img {
@@ -102,7 +106,7 @@ aside a:hover {
 
 
 .headline {
-    font-size: .2667rem;
+    font-size: 32px;
     font-weight: 400;
     padding-bottom: 0.5em;
     padding-top: .4167rem;
@@ -123,7 +127,7 @@ main p {
 .quote {
     border: none;
     padding-left: .0417rem;
-    font-size: .1333rem;
+    font-size: 16px;
     font-family: Times New Roman, 楷体, Consolas, 'Microsoft Yahei', 'Open Sans', sans-serif;
 }
 

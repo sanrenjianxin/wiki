@@ -2,26 +2,33 @@
 main {
     background-color: white;
 }
-.leftjieshao {
-    float: left;
-    margin: .375rem .1917rem 0 .3667rem;
-}
-.leftjieshao img {
-    width: .6667rem;
-    height: .6667rem;
-}
+
 .jieshao {
-    float: left;
-    margin-top: .4rem;
+    display: flex;
+    flex-direction: row;
+    height: 181px;
     color: black;
-    font-size: .1167rem;
+    padding-top: .4583rem;
+    padding-left: .4583rem;
 }
 
-.jieshao h4 {
-    font-size: .15rem;
-    font-style: none;
-    margin-bottom: .1833rem;
+.jieshao img {
+    width: .675rem;
+    height: .675rem;
 }
+
+.wenzi {
+    width: 7.6667rem;
+}
+.jieshao h4 {
+    font-size: .2333rem;
+    margin-bottom: .0833rem;
+}
+
+.jieshao p {
+    font-size: .1333rem;
+}
+
 
 .tuijian {
     float: right;
