@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="name"></title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/tiliang.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/smallti.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/smallde.css">
+    <script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/character.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h2>冰与火之歌维基</h2>
+        <div class="greet">欢迎你,游客<button id="logout">登出</button></div>
+    </header>
+
+    <nav>
+        <!-- 导航栏 -->
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="characters.html">人物</a></li>
+            <li><a href="world.html">世界</a></li>
+            <li><a href="add_character.html">管理员界面</a></li>
+        </ul>
+        <!-- 搜索模块 -->
+        <div class="search">
+            <input type="search" placeholder="在冰与火之歌维基中搜索关键词">
+            <button type="button"></button>
+        </div>
+    </nav>
+
+    <main class="w clearfix">
+        <aside>
+            <ul>
+                <li><a href="#ac1">1 性格和外貌</a></li>
+                <li><a href="#ac2">2 历史</a></li>
+                <li><a href="#ac3">3 语录</a></li>
+                <li><a href="#ac0"> 回到顶部</a></li>
+            </ul>
+        </aside>
+        <div class="jianjie clearfix">
+            <div class="headname" id="ac0">
+                <h1 class="name"></h1>
+            </div>
+            <table class="infobox">
+                <tbody>
+                    <tr class="infobox-title">
+                        <th><b class="name"></b>
+                            <br>
+                            <b id="n3"></b>
+                        </th>
+                    </tr>
+                    <tr class="infobox-photo">
+                        <th>
+                            <div class="scene">
+                                <div class="card">
+                                    <div class="card__face card__face--front">
+                                        <img src="" id="img1" />
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <img src="" id="img2" />
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr class="infobox-thead">
+                        <th>基本信息</th>
+                    </tr>
+                    <tr>
+                        <th class="infobox-lable">别名</th>
+                        <td class="infobox-data" id="bieming"></td>
+                    </tr>
+                    <tr>
+                        <th>头衔</th>
+                        <td id="touxian"></td>
+                    </tr>
+                    <tr>
+                        <th>势力</th>
+                        <td id="shili"></td>
+                    </tr>
+                    <tr>
+                        <th>宗教/文化</th>
+                        <td id="wenhua"></td>
+                    </tr>
+                    <tr>
+                        <th>出生</th>
+                        <td id="chusheng"></td>
+                    </tr>
+                    <tr class="infobox-thead">
+                        <th>人物关系</th>
+                    </tr>
+                    <tr>
+                        <th>配偶</th>
+                        <td id="peiou"></td>
+                    </tr>
+                    <tr>
+                        <th>恋情</th>
+                        <td id="lianqing"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <h2 class="headline">性格和外貌</h2>
+                <p id="ac1">
+                </p>
+            </div>
+            <div>
+                <h2 class="headline">历史</h2>
+                <p id="ac2">
+                </p>
+            </div>
+            <div>
+                <h2 class="headline">语录</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td valign="top" class="yinhao">“</td>
+                            <td class="quote" id="ac3">
+                            </td>
+                            <td valign="bottom" class="yinhao">”</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="clearfix">
+        <div class="kuozhan">
+            <dl>
+                <dt>关注作者</dt>
+                <dd><a href="#">知乎</a></dd>
+                <dd><a href="#">CSDN</a></dd>
+                <dd><a href="#">个人博客</a></dd>
+            </dl>
+            <dl>
+                <dt>用户交流</dt>
+                <dd><a href="#">QQ一群</a></dd>
+                <dd><a href="#">QQ二群</a></dd>
+                <dd><a href="#">QQ三群</a></dd>
+            </dl>
+            <dl>
+                <dt>合作伙伴</dt>
+                <dd><a href="#">打赏</a></dd>
+                <dd>联系作者</dd>
+            </dl>
+        </div>
+    </footer>
+</body>
+
+</html>

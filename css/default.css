@@ -73,6 +73,8 @@ body {
 /* 默认设置 */
 /* 标题栏 */
 header {
+    display: flex;
+    justify-content:space-between;
     height: 55px;
     background-image: url(../icon/main.png);
     background-repeat: no-repeat;
@@ -86,9 +88,12 @@ header h2{
     font-weight: 400;
     margin-left: 45px;
 }
+
 .greet {
-    float: right;
+    margin-right: 20px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 /* 标题栏 */
 /* 导航栏 */

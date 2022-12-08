@@ -233,3 +233,8 @@ main {
     width: 26px;
     background-color: none;
 }
+
+.intro {
+  font-size: 12px;
+  color: gray;
+}
