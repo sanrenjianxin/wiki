@@ -7,7 +7,7 @@ $(function () {
     if (num > 0) {
         value = arr.substr(num + 1)
     }
-    var path = "/json/" + value + ".json"
+    var path = "json/" + value + ".json"
     $.get(path, function (res) {
         $(".name").html(res.name)
         $("#ac1").html(res.ac1)
