@@ -21,7 +21,7 @@ $(function () {
     $(".al-button").click(function () {
         var al_name = $(".al-search").val();
         if (al_name != undefined) {
-            var path = "/json/" + al_name + ".json"
+            var path = "json/" + al_name + ".json"
             // ajax加载数据
             $.get(path, function (res) {
                 $("#al-1").html(res.ac1)
